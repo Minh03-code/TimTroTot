@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AccountController;
+use App\Http\Controllers\ChuTroController;
+use App\Models\ChuTro;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('account/all', [AccountController::class, 'getAllAccount']);
+Route::get('account/all', [ChuTroController::class, 'getAllChuTroAPI']);

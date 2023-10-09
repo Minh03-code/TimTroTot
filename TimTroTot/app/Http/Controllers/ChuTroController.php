@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ChuTro;
 use Illuminate\Http\Request;
 
 class ChuTroController extends Controller
@@ -60,5 +61,8 @@ class ChuTroController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+    public function getAllChuTroAPI(Request $request){
+        return ChuTro::all();
     }
 }
